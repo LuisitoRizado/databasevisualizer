@@ -53,7 +53,7 @@ export default function TableCard({
       onDragStop={(_, d) => {
         onDrag(table.name, { x: d.x, y: d.y });
       }}
-      onResize={(_, direction, ref) => {
+      onResize={(_, __, ref) => {
         setDimensions({
           width: ref.offsetWidth,
           height: ref.offsetHeight,
